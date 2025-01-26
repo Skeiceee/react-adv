@@ -14,7 +14,6 @@ code {
     monospace;
 }
 
-
 .main-layout {
   display: flex;
   flex-direction: row;
@@ -24,30 +23,33 @@ nav {
   background-color: #363a45;
   height: 100vh;
   margin-right: 15px;
-  overflow-y: scroll;
+  overflow-y: auto;
   text-align: center;
   width: 250px;
+  border-right: 1px solid #444;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
+
 nav ul {
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
-nav li {
-  list-style: none;
-  margin-bottom: 10px;
+nav ul li {
+  margin: 10px 0;
 }
 
-nav li a {
-  color: white;
-  font-size: 1.2rem;
+nav ul li a {
+  color: #ffffff;
   text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.nav-active {
-  color: grey;
-  transition: all .3s ease-out;
+nav ul li a:hover {
+  background-color: #505763;
 }
