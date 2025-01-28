@@ -12,3 +12,7 @@
     width: calc(100% - 20px);
     border-radius: 20px;
 }
+
+.text-black button{
+    color: black;
+}

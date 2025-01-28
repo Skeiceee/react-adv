@@ -31,7 +31,7 @@ const ShoppingPage = () => {
         <ProductCard product={ product }>
           <ProductImage className='custom-image'/>
           <ProductTitle/>
-          <ProductButtons/>
+          <ProductButtons className='text-black'/>
         </ProductCard>
 
       </div>
