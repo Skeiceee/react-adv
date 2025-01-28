@@ -22,18 +22,18 @@ const ShoppingPage = () => {
         gap: '10px'
        }}>
         
-        <ProductCard product={ product }>
-          <ProductCard.Image/>
-          <ProductCard.Title/>
+        <ProductCard product={ product } className="bg-dark">
+          <ProductImage className='custom-image'/>
+          <ProductCard.Title className="text-white"/>
           <ProductCard.Buttons/>
         </ProductCard>
 
         <ProductCard product={ product }>
-          <ProductImage/>
-          <ProductTitle title="dawdwadwa"/>
+          <ProductImage className='custom-image'/>
+          <ProductTitle/>
           <ProductButtons/>
         </ProductCard>
-        
+
       </div>
     </div>
   )

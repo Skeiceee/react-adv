@@ -1,9 +1,10 @@
 import { ReactNode } from "react";
 
 export interface Props {
-    product: Product;
-    children?: ReactNode
-  }
+  product: Product;
+  children?: ReactNode
+  className?: string;
+}
   
 export interface Product {
     id: string;
